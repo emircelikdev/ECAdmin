@@ -1,3 +1,8 @@
 {
-    "helloWorld": "Merhaba Dünya"
+    "helloWorld": "Merhaba Dünya",
+
+    "langs" : {
+        "tr" :  "Türkçe",
+        "en" : "Ingilizce"
+    }
 }
