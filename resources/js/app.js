@@ -12,15 +12,14 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 //i18n
 import { createI18n } from "vue-i18n";
-import translateTr from "./Sources/Langs/tr.json";
-import translateEn from "./Sources/Langs/en.json";
+import Langs from "./Sources/Langs/langs";
+
 const i18n = createI18n({
-    legacy: false,
     locale: "tr",
+    legacy: false,
     fallbackLocale: "en",
     messages: {
-        tr: translateTr,
-        en: translateEn,
+        ...Langs().translates,
     },
 });
 
