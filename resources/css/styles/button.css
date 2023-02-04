@@ -1,0 +1,27 @@
+.btn {
+    @apply flex w-fit space-x-2 px-4 items-center py-2 rounded-lg;
+}
+
+.btn-solid {
+    @apply font-semibold;
+}
+
+.btn-solid.btn-green {
+    @apply bg-green-500 dark:bg-green-500/25 dark:border dark:border-emerald-500;
+}
+
+.btn-solid.btn-blue {
+    @apply text-white bg-blue-500 dark:bg-sky-500/25 dark:border dark:border-sky-700;
+}
+
+.btn-solid.btn-rose {
+    @apply text-white bg-rose-500 dark:bg-rose-500/25 dark:border dark:border-rose-700;
+}
+
+.btn-light {
+    @apply border;
+}
+
+.btn-light.btn-green {
+    @apply bg-emerald-200 text-emerald-700;
+}
