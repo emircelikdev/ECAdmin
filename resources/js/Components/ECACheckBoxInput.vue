@@ -45,9 +45,9 @@ const addValue = (value) => {
             <!--İnput-->
             <div v-for="i in options">
                 <input type="checkbox" class="input-checkbox" :value="modelValue" :checked="modelValue.includes(i[valueKey])" :class="icon ? 'pl-10' : ''"
-                    @input="$change(addValue(i[valueKey]))" :name="i[valueKey]">
+                    @input="$change(addValue(i[valueKey]))" :name="i[valueKey]" :id="i[valueKey]">
                 <!--Label-->
-                <label>{{ i[labelKey]}}</label>
+                <label :for="i[valueKey]">{{ i[labelKey]}}</label>
 
             </div>
             <!--Clearable Button-->
