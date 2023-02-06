@@ -42,7 +42,7 @@ defineProps({
                     :checked="modelValue === i[valueKey] ? 'selected' : null" @change="$emit('update:modelValue', $event.target.id)"
                     :name="id">
                 <!--Label-->
-                <label>{{ i[labelKey]}}</label>
+                <label :for="i[valueKey]">{{ i[labelKey]}}</label>
 
             </div>
             <!--Clearable Button-->
